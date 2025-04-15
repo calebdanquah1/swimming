@@ -147,7 +147,8 @@ p{
 }
 #we{
   
-  padding-top: 10px;   /* Adds space from the top */
+  padding-top: 10px; /* Adds space from the top */
+  padding-left:3px;
   font-size: 30px;
   font-style: italic;
   font-family: "Inter", sans-serif;
