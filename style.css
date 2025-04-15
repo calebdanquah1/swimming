@@ -1,3 +1,10 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+
 /* Hamburger button styles */
 .hamburger {
   padding: 15px;
