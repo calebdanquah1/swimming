@@ -120,7 +120,7 @@
  
 }
 header{
- background-image: url("assets/pool.jpg");
+ background-image: url("pool.jpg");
  padding: 14rem;
  background-repeat: no-repeat;           /* Prevents duplication */
   background-size: cover; 
@@ -134,7 +134,7 @@ p{
 #we{
   text-align: center;  /* Horizontally centers the text */
   padding-top: 10px;   /* Adds space from the top */
-  font-size: 35px;
+  font-size: 30px;
   font-style: italic;
   font-family: "Inter", sans-serif;
 }
