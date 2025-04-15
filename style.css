@@ -100,10 +100,6 @@
  white-space: nowrap; /* Prevents wrapping */
  
 }
-div {
-  height: 100px;
-  width: 150px;
-}
 @media (min-width: 768px) {
  .hamburger {
    display: none;
@@ -124,9 +120,9 @@ div {
  
 }
 header{
- background-image: url("pool.jpg");
+ background-image: url("assets/pool.jpg");
  padding: 14rem;
-  background-repeat: no-repeat;           /* Prevents duplication */
+ background-repeat: no-repeat;           /* Prevents duplication */
   background-size: cover; 
 }
 p{
@@ -142,6 +138,13 @@ p{
   font-style: italic;
   font-family: "Inter", sans-serif;
 }
+
+div {
+  height: 100px;
+  width: 150px;
+}
+
+
 
 .cta-button {
  background-color: #ff6f61; /* Bright color for the button */
@@ -164,3 +167,7 @@ p{
     min-height: 20vh;       /* Better than fixed 5vh */
             /* full viewport height */
 }
+hello {
+  font-family: 'Playfair Display', serif;
+}
+
