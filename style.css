@@ -130,6 +130,13 @@ p{
   font-style: italic;
   
 }
+#we{
+  text-align: center;  /* Horizontally centers the text */
+  padding-top: 10px;   /* Adds space from the top */
+  font-size: 35px;
+  font-style: italic;
+  font-family: "Inter", sans-serif;
+}
 
 .cta-button {
   background-color: #ff6f61; /* Bright color for the button */
@@ -144,8 +151,10 @@ p{
   background-color: #e65a50; /* Darker shade on hover */
 }
 .container {
-  display: flex;
-  justify-content: center; /* horizontal centering */
-  align-items: center;     /* vertical centering */
-  height: 5vh;           /* full viewport height */
+ display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: center; /* Centers vertically (optional) */
+    align-items: center;    /* Centers horizontally (optional) */
+    gap: 10px;              /* Adds space between items */
+    min-height: 20vh; 
 }
