@@ -96,6 +96,10 @@
 .menu--active {
   transform: translateX(0);
 }
+.inline-text {
+  white-space: nowrap; /* Prevents wrapping */
+  
+}
 @media (min-width: 768px) {
   .hamburger {
     display: none;
