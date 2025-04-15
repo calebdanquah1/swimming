@@ -107,6 +107,13 @@ body, html {
  white-space: nowrap; /* Prevents wrapping */
  
 }
+p{
+ text-align: center;  /* Horizontally centers the text */
+ padding-top: 10px;   /* Adds space from the top */
+ font-size: 20px;
+ font-style: italic;
+}
+
 @media (min-width: 768px) {
  .hamburger {
    display: none;
