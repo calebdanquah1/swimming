@@ -124,8 +124,10 @@ div {
  
 }
 header{
- background-image: url("assets/pool.jpg");
+ background-image: url("pool.jpg");
  padding: 14rem;
+  background-repeat: no-repeat;           /* Prevents duplication */
+  background-size: cover; 
 }
 p{
  text-align: center;  /* Horizontally centers the text */
