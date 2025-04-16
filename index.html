@@ -1,53 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hamburger Menu</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SwimwithPkay</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  <script src="script.js"></script>
+
+  <!-- Script -->
+  <script src="script.js" defer></script>
 </head>
 <body>
-  
   <section class="home" id="home">
-  <button class="hamburger" aria-label="Menu" aria-expanded="false">
-    <span class="hamburger-box">
-      <span class="hamburger-inner"></span>
-    </span>
-  </button>
-  
-  <nav class="menu">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#testimonials">Testiomials</a></li>
-      <li><a href="#Contact">Contact Us</a></li>
-      <li><a href="#rates">Rates</a></li>
-      <li><a href="#FAQ">FAQs</a></li>
-    </ul>
-  </nav>
-<!-- Add sections with matching IDs -->
-<section id="home">
-  <p><h>SwimwithDave</h></p>
-  <header>
-    <div class="container">
-      <p class="inline-text"   id="we">Learn to swim today!</p>
-    <a href="https://wa.me/+233558495749" class="cta-button">Book a class</a>
+    <div class="container mt-4">
+      
+      <!-- Hamburger Button -->
+      <button class="hamburger btn btn-outline-primary mb-3" aria-label="Menu" aria-expanded="false">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+
+      <!-- Navigation Menu -->
+      <nav class="menu navbar navbar-expand-lg bg-light p-3 rounded">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link text-dark" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#contact">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#rates">Rates</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#FAQ">FAQs</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hero Section -->
+      <header class="text-center mt-5">
+        <p class="display-4 fw-bold mb-3">SwimwithDave</p>
+        <p class="lead" id="we">Learn to swim today!</p>
+        <a href="https://wa.me/+233558495749" class="btn btn-primary btn-lg mt-2 cta-button">Book a Class</a>
+      </header>
+
+      <!-- Welcome Message -->
+      <div class="mt-5">
+        <p class="hello fs-4"><b>Hello!</b></p>
+        <p class="hello">Want to conquer your fear of water or boost your swimming skills? You're in the perfect place! Join the many students who’ve reached their goals with us. From water safety to stroke refinement, we’ve got you covered. Let’s dive in.</p>
+      </div>
     </div>
-  </header>
-</section>
-<p class="hello"><b>Hello!</b></p>
-<p class="hello"> Want to conquer your fear of water or boost your swimming skills? You're in the perfect place! Join the many students who’ve reached their goals with us. From water safety to stroke refinement, we’ve got you covered. Let’s dive in</p>
+  </section>
 
-<section id="about">
-  <!-- About content -->
-</section>
+  <!-- Other Sections -->
+  <section id="about" class="container mt-5">
+    
+  </section>
 
-<section id="services">
-  <!-- Services content -->
-</section>
+  <section id="testimonials" class="container mt-5 " >
+    <div class="container mt-4 " class="me" style="background-color: #9ACBD0;">
+    <body>
+    <p><b>Testimonials</b></p>
+    <p><b>Fear-to-freedom in the water</b><br>
+    <p class="hello">  Pkay helped me get comfortable putting my head underwater in just a couple of lessons. I went from zero to floating and kicking in no time!
 
-<section id="contact">
-  <!-- Contact content -->
-</section>
+      He was so patient and attuned to what I was ready for, guiding me through my fears while teaching the basics. Before I knew it, I was swimming confidently—exactly where I needed to be. I’m so grateful to have found Pkay. Now, I’m a swimmer!<br>
+      - Jemimah</p>
+  </div>
+    </body>
+  </section>
+
+  <section id="contact" class="container mt-5">
+    <!-- Contact content -->
+  </section>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
