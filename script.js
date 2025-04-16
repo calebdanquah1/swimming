@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!isClickInside && menu.classList.contains('menu--active')) {
       toggleMenu();
     }
-    document.querySelectorAll('.faq-question').forEach(button => {
+   document.querySelectorAll('.faq-question').forEach(button => {
   button.addEventListener('click', () => {
     const answer = button.nextElementSibling;
     const isOpen = button.classList.contains('active');
@@ -63,7 +63,18 @@ document.addEventListener('DOMContentLoaded', function() {
     // Toggle current FAQ
     button.classList.toggle('active');
     answer.style.maxHeight = isOpen ? null : answer.scrollHeight + 'px';
+    
+    // Auto-scroll if opening
+    if (!isOpen) {
+      setTimeout(() => { // Small delay for height transition
+        answer.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'nearest' // or 'start'/'center'
+        });
+      }, 100);
+    }
   });
 });
   });
 });
+
