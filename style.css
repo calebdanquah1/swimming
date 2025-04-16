@@ -247,7 +247,11 @@ p {
 .faq-question.active + .faq-answer {
   max-height: 500px;
 }
-
+img{
+  padding: 2rem;
+  height: 100vh;
+  width: 120vw;
+}
 
 
 
