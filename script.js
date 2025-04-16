@@ -47,34 +47,20 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!isClickInside && menu.classList.contains('menu--active')) {
       toggleMenu();
     }
-   document.querySelectorAll('.faq-question').forEach(button => {
-  button.addEventListener('click', () => {
-    const answer = button.nextElementSibling;
-    const isOpen = button.classList.contains('active');
-    
-    // Close all other FAQs
-    document.querySelectorAll('.faq-question').forEach(item => {
-      if (item !== button) {
-        item.classList.remove('active');
-        item.nextElementSibling.style.maxHeight = null;
-      }
-    });
-    
-    // Toggle current FAQ
-    button.classList.toggle('active');
-    answer.style.maxHeight = isOpen ? null : answer.scrollHeight + 'px';
-    
-    // Auto-scroll if opening
-    if (!isOpen) {
-      setTimeout(() => { // Small delay for height transition
-        answer.scrollIntoView({ 
-          behavior: 'smooth', 
-          block: 'nearest' // or 'start'/'center'
-        });
-      }, 100);
-    }
-  });
-});
+  
   });
 });
 
+document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', function() {
+          this.classList.toggle('active');
+          
+          const answer = this.nextElementSibling;
+          if (this.classList.contains('active')) {
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+          } else {
+            answer.style.maxHeight = '0';
+          }
+        });
+      });
+  
