@@ -47,5 +47,23 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!isClickInside && menu.classList.contains('menu--active')) {
       toggleMenu();
     }
+    document.querySelectorAll('.faq-question').forEach(button => {
+  button.addEventListener('click', () => {
+    const answer = button.nextElementSibling;
+    const isOpen = button.classList.contains('active');
+    
+    // Close all other FAQs
+    document.querySelectorAll('.faq-question').forEach(item => {
+      if (item !== button) {
+        item.classList.remove('active');
+        item.nextElementSibling.style.maxHeight = null;
+      }
+    });
+    
+    // Toggle current FAQ
+    button.classList.toggle('active');
+    answer.style.maxHeight = isOpen ? null : answer.scrollHeight + 'px';
+  });
+});
   });
 });
