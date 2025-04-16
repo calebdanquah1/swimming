@@ -188,3 +188,6 @@ p {
   font-family: 'Playfair Display', serif;
   text-align: center;
 }
+.inline-text {
+  white-space: nowrap; 
+}
