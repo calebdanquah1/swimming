@@ -254,7 +254,10 @@ img{
   object-fit: cover;
   display: block;  
 }
-
+.contact header{
+  background-image: url('pool.jpg');
+  padding-bottom: 40px;
+}
 
 
 
