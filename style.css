@@ -141,7 +141,7 @@ header {
   background-size: cover;
   text-align: center;
   color: white;
-  padding-top:40px;
+  padding-top:25px;
 }
 
 /* Hero Text */
@@ -256,7 +256,6 @@ img{
 }
 #swimspa{
 font-style:italic;
-font-size:50px;
 }
 
 
