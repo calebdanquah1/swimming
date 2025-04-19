@@ -256,7 +256,12 @@ img{
 }
 .contact header{
   background-image: url('bp.jpg');
-  padding-bottom: 40px;
+  padding: 14rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: black;
+  padding-top:25px;
 }
 .font{
   font-size:100px;
