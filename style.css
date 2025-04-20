@@ -263,6 +263,8 @@ img{
 
 footer {
   min-height: 20vh;
+  background-color:#000;
+  
 }
 
 footer .container .content {
