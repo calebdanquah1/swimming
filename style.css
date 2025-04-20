@@ -290,16 +290,16 @@ footer .container .content .social .logo {
   align-items: center;
   width: 40px;
   height: 40px;
-  background: var(--black);
+  background:#000;
   border: 2px solid var(--white);
   border-radius: 50%;
-  fill: var(--white);
+  fill: white;
   transition: 0.2s linear;
 }
 
 footer .container .content .social .logo:hover {
   background-color: var(--white);
-  fill: var(--black);
+  fill: #000;
   transition: 0.2s linear;
 }
 
