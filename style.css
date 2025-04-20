@@ -261,6 +261,55 @@ img{
 }
 
 
+footer {
+  min-height: 20vh;
+}
+
+footer .container .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .container .content h1 {
+  font: italic bold 1.5rem "IBM Plex Sans", sans-serif;
+}
+
+footer .container .content .social {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .container .content .social .logo {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: var(--black);
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  fill: var(--white);
+  transition: 0.2s linear;
+}
+
+footer .container .content .social .logo:hover {
+  background-color: var(--white);
+  fill: var(--black);
+  transition: 0.2s linear;
+}
+
+footer .container .content .social p {
+  font-weight: bold;
+}
+
+
+
+
 
 
 
