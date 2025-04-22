@@ -113,26 +113,6 @@ body, html {
   transform: translateX(0);
 }
 
-/* Responsive Menu Behavior */
-@media (min-width: 768px) {
-  .hamburger {
-    display: none;
-  }
-
-  .menu {
-    position: static;
-    height: auto;
-    transform: none;
-    padding: 0;
-    background: transparent;
-  }
-
-  .menu ul {
-    display: flex;
-    gap: 20px;
-  }
-}
-
 /* Header Styling */
 header {
   background-image: url("swim.jpg");
@@ -310,6 +290,66 @@ footer .container .content .social p {
   font-weight: bold;
 }
 
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+      font-size: 1.5rem;
+      padding: 0px;
+  }
+  header{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  display: block;  
+  padding-top: 120px;
+  
+  
+  }
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    position: static;
+    height:fit-content;
+    transform: none;
+    padding: 0px;
+
+    background: transparent;
+    background-color: #9ACBD0;
+    
+    
+  }
+
+  .menu ul {
+    display: flex;
+    gap: 20px;
+  }
+  .menu ul li a {
+    text-decoration: none;
+    color: black; /* or your preferred color */
+    position: relative;
+  }
+  
+  .menu ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px; /* adjust this if needed */
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .menu ul li a:hover::after {
+    width: 100%;
+  }
+  
+  }
 
 
 
