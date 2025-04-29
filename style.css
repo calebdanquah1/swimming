@@ -274,7 +274,7 @@ footer .container .content .social .logo {
   width: 40px;
   height: 40px;
   background:#000;
-  border: 2px solid ;
+  border: 2px solid var (white) ;
   border-radius: 50%;
   fill: white;
   transition: 0.2s linear;
